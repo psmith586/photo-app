@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <%- include('head.html') %>
+
+    <title>Registration</title>
+    
+    <header>
+    <%- include('navbar.html') %>    
+    </header>        
+   
+            
+    <body>
+        <form name="regForm" action="reg" method="POST">
+            <fieldset>
+                <legend>Registration Form: </legend>
+                
+                <input type="text" name="username" placeholder="Username"/> <br> <!-- Enables user to type username -->
+        
+                <input type="text" name="email" placeholder="Email"> <br> <!-- Enables user to type email address -->
+            
+                <input type="password" name="password" placeholder="Password"/> <br> <!-- Enables user to type password -->
+            
+                <input type="password" name="cpassword" placeholder="Confirm Password"/>  <br> <!-- Enables user to confirm password -->
+            
+                <input type="checkbox" id="confirm1" required value="Yes"> I agree that I am above 13 years of age.<br>
+                <input type="checkbox" id="confirm2" required value="Yes"> I agree to the Terms and Services.<br>
+            
+                <input type="submit" value="Sign Up"/><br> <!-- Creates a submit button labeled "Submit" -->
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang ="en">
+    
+    <%- include('head.html') %>
+    
+    <title>Welcome to PhotoZone!</title>
+    
+    <header>
+    <%- include('navbar.html') %>   
+    </header>
+    
+    <body>
+        <form name="landing" method="POST" action="/search">
+            <fieldset>
+                <input type="text" id="searchbar" name="item" placeholder= "What image are you finding?"/> <br>
+                <input id="getimage" type="submit" value="Submit"/>
+            </fieldset>
+        </form>
+        <script></script>
+    </body>
+</html>

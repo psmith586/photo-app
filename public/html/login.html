@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   
+    <%- include('head.html') %>
+    
+    <title>Login</title>
+     
+    <header> 
+    <%- include('navbar.html') %>  
+    </header> <!-- creates Login header on top of page -->        
+    
+    <body>        
+        <form name="loginForm" method="POST" action="auth">
+            <fieldset>
+                <legend>Login Info: </legend>
+                <input type="text" id="username" name="username" placeholder="Username"/><br> <!-- Enables user to type username -->
+
+                <input type="password" id="password" name="password" placeholder="Password"/><br> <!-- Displays texts as dots to hide password -->
+
+                <input type="submit" value="Sign in"/><br> <!-- Creates a submit button labeled "Submit" -->
+            </fieldset>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <%- include('head.html') %>
+    
+    <title>Image Post</title>
+    
+    <header> 
+    <%- include('navbar.html') %>     
+    </header>
+    
+
+    <body>
+        <form name="postForm" method="POST" action="/upload" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Post Information: </legend>
+                <input type="text" name="pTitle" id="pTitle" placeholder="Title"><br> <!-- Enables user to type a post Title -->
+         
+                <input type="text" name="pDescription" id="pDescription" placeholder="Insert description here..."><br> <!-- Enables user to type a post Description -->
+    
+                <label for="image"> Image: </label>
+                <input type="file" name="uploadImage" id="image" accept ="image/*"><br> <!-- Enables user to uplaod an image -->
+    
+                <input type="checkbox" id="acceptAUP" required value="Yes"> I agree to the Acceptable Use Policy for uploading images.<br>
+    
+                <input type="submit" value="Submit Image"/><br> <!-- Creates a submit button labeled "Submit" -->
+            </fieldset>
+        </form>
+    </body>    
+</html>

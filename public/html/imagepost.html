@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    
+    <%- include('head.html') %>
+
+    <title>Image</title>
+    
+    <header>
+        <%- include('navbar.html') %>    
+    </header> 
+   
+
+    <body>
+    
+        <div class="image-view">
+            <img src=<%= img %> alt="img" />
+        </div>
+    
+        <form name="specificImageForm" method="POST" action="/comment">
+            <fieldset>
+                <legend id="imageTitle"> <%= imageTitle %> </legend>
+                <input type="text" id="commentBox" name="comment" placeholder="What do you think about this image?"/><br> <!-- Enables user to comment on image -->
+
+                <input type="submit" value="Comment"/><br> <!-- Creates a submit button labeled "Comment" -->
+            </fieldset>
+        </form>
+        
+        <h1>Comments</h1>    
+        <p1 id="comments section"> <%= data %> </p1>
+    </body>
+</html>
